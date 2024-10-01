@@ -5,27 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/e64136fcfc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e64136fcfc.js" crossorigin="anonymous"></script>
     <title>Spotify Web</title>
 </head>
 <body>
     <main>
+        <!-- NAVBAR -->
         <nav>
-
+            <div class="logo">
+                <img src="./img/logo.svg" alt="Logo">
+            </div>
+            <!-- HOME -->
+            <div class="home">
+                <ul class="nav_list">
+                    <li><i class="fa-solid fa-house"></i>Home</li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i>Cerca</li>
+                    <li><i class="fa-solid fa-lines-leaning"></i>La Tua Libreria</li>
+                </ul>
+                <!-- PLAYLIST -->
+                <div class="playlist">
+                    <h3>PLAYLIST</h3>
+                    <p><i class="fa-regular fa-square-plus"></i>Crea Playlist</p>
+                    <ul class="new_playlist">
+                        <li>Nuova Playlist</li>
+                        <li>Nuova Playlist</li>
+                        <li>Nuova Playlist</li>
+                        <li>Nuova Playlist</li>
+                        <li>Nuova Playlist</li>
+                    </ul>
+                </div>
+                <!-- APP e ACCOUNT -->
+                <section class="download">
+                    <div class="install"> 
+                        <p><i class="fa-regular fa-circle-down"></i>Installa App</p>
+                        <hr color="grey">
+                    </div>
+                    <div class="account">
+                        <p><i class="fa-solid fa-user"></i>Alessandro Puglisi</p>
+                     </div>
+                </section>
+            </div>
         </nav>
 
         <section class="music">
-
+            <!-- Sezione Musica -->
         </section>
 
         <!-- PLAYER -->
         <section class="player">
             <div class="left-player">     
-              <div class="song">
+                <div class="song">
                     <div class="img">
-                        <img class="current_song" src="./img/sinister.jpeg" alt=""> 
+                        <img class="current_song" src="./img/sinister.jpeg" alt="Copertina Brano">
                     </div>   
                     <div class="song_title">
                         <strong class="song_name">Sinister</strong>
@@ -35,15 +68,16 @@
                         <i class="fa-regular fa-heart"></i>
                         <i class="fa-regular fa-folder"></i>
                     </div>
-              </div>
+                </div>
             </div>
+
             <div class="center-player">
                 <div class="song_btn">
-                   <a href=""><i class="fa-solid fa-shuffle"></i></a> 
-                   <a href=""><i class="fa-solid fa-backward-step"></i></a>
-                   <a href=""><i class="fa-regular fa-circle-play"></i></a>
-                   <a href=""><i class="fa-solid fa-forward-step"></i></a>
-                   <a href=""><i class="fa-solid fa-rotate-right"></i></a>
+                    <a href="#"><i class="fa-solid fa-shuffle"></i></a> 
+                    <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                    <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                    <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                    <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
                 </div>
                 <div class="time_bar">
                     <div class="time_progress">0:25</div>
@@ -51,6 +85,7 @@
                     <div class="time_progress">4:20</div>
                 </div>
             </div>
+
             <div class="right-player">
                 <div class="volume_btn">
                     <i class="fa-solid fa-bars"></i>
@@ -61,6 +96,5 @@
             </div>
         </section>
     </main>
-    
 </body>
-</html>  
+</html>
