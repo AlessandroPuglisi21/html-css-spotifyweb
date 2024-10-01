@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e64136fcfc.js" crossorigin="anonymous"></script>
     <title>Spotify Web</title>
 </head>
 <body>
@@ -18,10 +19,48 @@
         <section class="music">
 
         </section>
+
+        <!-- PLAYER -->
         <section class="player">
-            
+            <div class="left-player">     
+              <div class="song">
+                    <div class="img">
+                        <img class="current_song" src="./img/sinister.jpeg" alt=""> 
+                    </div>   
+                    <div class="song_title">
+                        <strong class="song_name">Sinister</strong>
+                        <p class="song_artist">Nome Brano</p>
+                    </div> 
+                    <div class="song_icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+              </div>
+            </div>
+            <div class="center-player">
+                <div class="song_btn">
+                   <a href=""><i class="fa-solid fa-shuffle"></i></a> 
+                   <a href=""><i class="fa-solid fa-backward-step"></i></a>
+                   <a href=""><i class="fa-regular fa-circle-play"></i></a>
+                   <a href=""><i class="fa-solid fa-forward-step"></i></a>
+                   <a href=""><i class="fa-solid fa-rotate-right"></i></a>
+                </div>
+                <div class="time_bar">
+                    <div class="time_progress">0:25</div>
+                    <div class="progress"></div>
+                    <div class="time_progress">4:20</div>
+                </div>
+            </div>
+            <div class="right-player">
+                <div class="volume_btn">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="volume_bar"></div>
+                </div>
+            </div>
         </section>
     </main>
     
 </body>
-</html>
+</html>  

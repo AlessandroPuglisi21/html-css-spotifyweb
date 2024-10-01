@@ -3,16 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 main{
     width: 100%;
     height: calc(100vh);
     display: flex;
 }
+
 body{
     font-family: "Poppins", system-ui;
 }
-/* ------------------------------------------ */
 
+/* ------------------------------------------ */
 /* DESKTOP VERSION */
 
 /* MENU */
@@ -29,6 +31,7 @@ nav{
     min-height: 400px;
     overflow: hidden;
 }
+
 /* MUSIC */
 .music{
     width: calc(100% - 225px);
@@ -37,13 +40,119 @@ nav{
     overflow: auto;
     padding-top: 120px;
 }
+
 /* PLAYER */
 .player{
     width: 100%;
-    height: 50px;
+    height: 100px;
     background-color: #282828;
     display: flex;
     position: fixed;
     bottom: 0px;
     z-index: 2;
+    align-items: center;
+}
+
+.left-player{
+    width: 30%;
+    margin-left: 10px;
+}
+
+.center-player{
+    width: 40%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.song_btn {
+    display: flex;
+    justify-content: space-between; 
+    width: 60%; 
+    margin-bottom: 10px; 
+    font-size: 22px;
+}
+
+.time_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.progress {
+    background-color: #848484;
+    border-radius: 4px;
+    height: 3px;
+    width: 100%; 
+    margin: 0 10px; 
+    position: relative;
+}
+
+.time_progress {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.right-player{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+.current_song{
+    max-width: 50px;
+    width: 100%;
+}
+
+.song{
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.song_title{
+    color: white;
+    padding-left: 10px;
+}
+
+.song_name{
+    font-size: 14px;
+}
+
+.song_artist{
+    font-size: 10px;
+    color: #848484;
+}
+
+.song_icons{
+    color: #848484;
+    margin-left: 30px;
+}
+
+.fa-folder{
+    margin-left: 8px;
+}
+
+.song_btn a{
+    color: white;
+}
+
+.volume_btn{
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    color: white;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.volume_bar{
+    width: 30%; 
+    height: 3px; 
+    background-color: #848484; 
+    border-radius: 4px;
 }
