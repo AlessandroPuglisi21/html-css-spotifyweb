@@ -104,7 +104,7 @@ hr{
 /* MUSIC */
 .music{
     width: calc(100% - 225px);
-    height: 100%;
+    height:calc(100vh - 70px);
     background-color: #141922;
     overflow: auto;
     padding-top: 120px;
@@ -122,19 +122,18 @@ hr{
     width:100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .col-2{
     flex: 16.66%; 
     max-width: 16.66%; 
     padding-right: 24px;
 }
-.recently_played h3{
+.recently_played h3 , .for_you , .artist{
     color: #ffffff;
     font-size: 24px;
 }
-.recently_played{
-    padding: 5%;
+.recently_played , .for_you , .artist{
+    padding:2.5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -154,6 +153,16 @@ hr{
 }
 .play_info{
     text-align: center;
+}
+.row h3{
+    color: #ffffff;
+}
+.for_you p , .artist p{
+    color: #848484;
+    font-size: 14px;
+}
+.circle{
+    border-radius: 200px;
 }
 
 /* ----------------------------------- */
