@@ -153,6 +153,7 @@ hr{
 }
 .play_info{
     text-align: center;
+    position: relative;
 }
 .row h3{
     color: #ffffff;
@@ -164,6 +165,7 @@ hr{
 .circle{
     border-radius: 200px;
 }
+
 
 /* ----------------------------------- */
 /* PLAYER */
@@ -297,7 +299,7 @@ hr{
         top: 0;
         right: 0;
         z-index: 1; 
-        padding-right:30px;
+        padding-right:60px;
     }
 
     .upgrade{
@@ -308,6 +310,18 @@ hr{
         padding: 10px 30px;
     }
 
+    /* HOVER EFFECTS */
+    .nav_list li:hover , .playlist li:hover , .download .install:hover , .sections li:hover{
+        color:white ;
+        transition: color 0.3s ease;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .recently_played figure:hover , .for_you figure:hover , .artist figure:hover , .adv .upgrade:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
 /* ----------------------------------------------- */
 
 /* TABLET VERSION */
@@ -336,8 +350,6 @@ hr{
     .time_progress{
         font-size: 10px;
     }
-
-    @media (max-width: 991.99px) {
     .col-2 {
         flex: 0 0 50%; 
         max-width: 50%; 
@@ -350,14 +362,13 @@ hr{
         height: auto; 
     }
 }
-}
 
 /* ----------------------------------- */
 
 /* MOBILE VERSION */
 
 /* SMARTPHONE VERSION */
-@media (max-width:575.99px){
+@media (max-width:767.99px){
     .left-player,.right-player, .center-player{
         width: 100%;
     }
