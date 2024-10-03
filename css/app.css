@@ -285,6 +285,28 @@ hr{
     border-radius: 4px;
 }
 
+/* ADV */
+    .adv{
+        width: calc(100% - 225px);
+        height: 100px;
+        background-color: rgba(0, 0, 0, .5);
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1; 
+        padding-right:30px;
+    }
+
+    .upgrade{
+        background-color: #141922;
+        color: #ffffff;
+        border: solid 2px;
+        border-radius: 20px;
+        padding: 10px 30px;
+    }
 
 /* ----------------------------------------------- */
 
@@ -314,6 +336,20 @@ hr{
     .time_progress{
         font-size: 10px;
     }
+
+    @media (max-width: 991.99px) {
+    .col-2 {
+        flex: 0 0 50%; 
+        max-width: 50%; 
+    }
+    .recently_played .row {
+        flex-wrap: wrap; 
+    }
+    .recently_played img {
+        width: 100%; 
+        height: auto; 
+    }
+}
 }
 
 /* ----------------------------------- */
@@ -370,5 +406,8 @@ hr{
     }
     .install i{ 
         font-size: 30px;
+    }
+    .adv{
+        width: calc(100% - 90px);
     }
 }
