@@ -109,6 +109,52 @@ hr{
     overflow: auto;
     padding-top: 120px;
 }
+.sections ul {
+    color: #848484;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px ;
+    margin-right:10px ;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.row{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col-2{
+    flex: 16.66%; 
+    max-width: 16.66%; 
+    padding-right: 24px;
+}
+.recently_played h3{
+    color: #ffffff;
+    font-size: 24px;
+}
+.recently_played{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col-2 img{
+   width: 100%;
+   height: auto;
+   margin-top: 20px;
+   
+}
+.play_info h3{
+    font-size: 18px;
+}
+.play_info p{
+    color: #848484;
+    font-size: 14px;
+}
+.play_info{
+    text-align: center;
+}
 
 /* ----------------------------------- */
 /* PLAYER */
